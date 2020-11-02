@@ -7,7 +7,8 @@ perintah = """
 / system identity pr
 / ip addr pr
 / ip route pr
-/ ip fi nat pr
+/ ip firewall nat pr
+
 """
 uport = "22"
 uname = "admin"
@@ -26,10 +27,8 @@ def helppage():
     print(" Menjalankan perintah pada satu host (ipaddress)")
 
 def main():
-    print("-----------------=++=-----------------")
     print("-----------------TuNK-----------------")
     print("---------Internal Usage Only----------")
-    print("-----------------=++=-----------------")
 
     checkdir()
     Y = str(datetime.now().strftime("%Y"))
@@ -97,7 +96,7 @@ def eksekusi(ipaddr, uport, uname, upass):
         cssh.connect(ipaddr, uport, uname, upass)
         print(color.GREEN+"Success connect ke device."+color.END)
         print(color.UNDERLINE+color.RED+"Hasilnya :"+color.END)
-        stdin, stdout, stderr = cssh.exec_command(perintah)
+        stdin, stdout, stderr = cssh.exec_command(format(perintah))
         print(stdout.read())
     except:
         print(color.RED+"Gak connect ke device. Lewatin....."+color.END)
