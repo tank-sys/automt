@@ -1,5 +1,5 @@
 # AutoMT
-Automatisasi Mikrotik<br>
-Untuk pengawasan mengajar mikrotik kelas XII TKJ<br><br>
+Automatisasi Mikrotik
+Untuk pengawasan mengajar mikrotik kelas XII TKJ
 
 menggunakan python
