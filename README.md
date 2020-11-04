@@ -15,7 +15,7 @@ setuptools<br>
 ecdsa<br>
 paramiko<br>
 
-#python3
+#python3 di windows
 <pre>
 python -m pip install bcrypt pycrypto setuptools ecdsa paramiko
 </pre>
