@@ -9,14 +9,16 @@ Install pada debian base
 <pre>apt install python-paramiko</pre>
 
 # Dependencies
-bcrypt
-pycrypto
-setuptools
-ecdsa
-paramiko
+bcrypt<br>
+pycrypto<br>
+setuptools<br>
+ecdsa<br>
+paramiko<br>
 
 #python3
+<pre>
 python -m pip install bcrypt pycrypto setuptools ecdsa paramiko
+</pre>
 dan ikutin petunjuk di layar jika ada kegagalan
 
 # Penggunaan
