@@ -58,12 +58,12 @@ def main():
 
 def md():
     if os.path.exists(fld):
-        print("Checking file "+fld)
+#        print("Checking file "+fld)
         od = open(fld, "r")
         ad = od.readlines()
         td = len(ad)
         i = 0
-        print("Checking list IP ... ")
+#        print("Checking list IP ... ")
         for device in ad:
             i = i+1
             dd = device.split("|")
@@ -82,9 +82,9 @@ def checkdir():
 
 def verifdevice(ipaddr):
     try:
-        print("## Ping device....")
-        subprocess.check_output(['ping', '-c', '2', '-W', '1', ipaddr],stderr=subprocess.STDOUT,universal_newlines=True)
-        print(color.BLUE+"## Device UP. Njajal connect ke device....."+color.END)
+#        print("## Ping device....")
+#        subprocess.check_output(['ping', '-c', '2', '-W', '1', ipaddr],stderr=subprocess.STDOUT,universal_newlines=True)
+#        print(color.BLUE+"## Device UP. Njajal connect ke device....."+color.END)
         eksekusi(ipaddr, uport, uname, upass)
     except:
         print(color.RED+"## Device Down. Lewatin aja....."+color.END)
